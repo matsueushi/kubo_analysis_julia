@@ -1,4 +1,4 @@
-## 「データ解析のための統計モデリング入門」のJulia版Jupyter Notebook
+## 「データ解析のための統計モデリング入門」のJulia+Mamba版Jupyter Notebook
 
 著者のサイト : http://hosho.ees.hokudai.ac.jp/~kubo/ce/IwanamiBook.html
 
