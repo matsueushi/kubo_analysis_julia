@@ -9,4 +9,4 @@
 [第7章 一般化線形混合モデル(GLMM) -個体差のモデリング-](section7.ipynb)  
 [第9章 GLMのベイズモデル化と事後分布の推定](section9.ipynb)  
 [第10章 階層ベイズモデル -GLMMのベイズモデル化-](section10.ipynb)  
-[第11章 空間構造のある階層ベイズモデル](section11.ipynb)
+[第11章 空間構造のある階層ベイズモデル(途中)](section11.ipynb)
