@@ -1,4 +1,4 @@
-## 「データ解析のための統計モデリング入門」のJulia+Mamba版Jupyter Notebook
+## 「データ解析のための統計モデリング入門」のJulia版Jupyter Notebook
 
 
 久保拓弥「データ解析のための統計モデリング入門」をJuliaでモデリングしました。
