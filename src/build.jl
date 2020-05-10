@@ -15,11 +15,7 @@ for f in ["Project.toml", "Manifest.toml"]
     cp(joinpath(root, f), joinpath(out, f), force = true)
 end
 
-# for x in filter(x -> x != "build.jl", readdir("src"))
-for x in [
-    "section2.jl",
-    "section3.jl",
-    ] 
+for x in filter(x -> x != "build.jl", readdir("src"))
     Literate.markdown(joinpath(src, x), out_markdown; documenter = false)
     Literate.notebook(joinpath(src, x), out; preprocess = preprocess, execute = false, documenter = true)
 end
