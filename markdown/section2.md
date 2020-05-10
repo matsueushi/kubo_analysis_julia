@@ -1,4 +1,4 @@
-# Chapter 1. Computer Arithmetic
+# 2 確率分布と統計モデルの最尤推定
 
 ```julia
 using DataStructures
@@ -62,14 +62,14 @@ prob = pdf.(Poisson(3.56), y)
 ```
 
 ```julia
-plot(prob, linewidth = 2, linestyle = :dash, marker = 4)
+plot(prob, linewidth=2, linestyle=:dash, marker=4)
 ```
 
 ### 観測データと確率分布の対応
 
 ```julia
-histogram(data, bins = 10, label = "Data")
-plot!(prob * 50, linewidth = 2, linestyle = :dash, marker = 4, label = "")
+histogram(data, bins=10, label="Data")
+plot!(prob * 50, linewidth=2, linestyle=:dash, marker=4, label="")
 ```
 
 ## 2.4 ポアソン分布のパラメーターの最尤推定
@@ -81,7 +81,7 @@ logL(m) = sum(log.(pdf.(Poisson(m), data)))
 
 ```julia
 lambda = 2:0.1:5
-plot(lambda, logL.(lambda), linewidth = 2, title = "log likelihood", label = "")
+plot(lambda, logL.(lambda), linewidth=2, title="log likelihood", label="")
 ```
 
 ---
