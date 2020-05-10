@@ -12,10 +12,14 @@ function preprocess(s)
 end
 
 for f in ["Project.toml", "Manifest.toml"]
-    cp(joinpath(root, f), joinpath(out, f), force = true)
+    cp(joinpath(root, f), joinpath(out, f), force=true)
 end
 
 for x in filter(x -> x != "build.jl", readdir("src"))
-    Literate.markdown(joinpath(src, x), out_markdown; documenter = false)
-    Literate.notebook(joinpath(src, x), out; preprocess = preprocess, execute = false, documenter = true)
+    Literate.markdown(joinpath(src, x), out_markdown; documenter=false)
+    if x in ["section10.jl"]
+        Literate.notebook(joinpath(src, x), out; execute=false, documenter=true)
+    else
+        Literate.notebook(joinpath(src, x), out; preprocess=preprocess, execute=false, documenter=true)
+    end
 end
