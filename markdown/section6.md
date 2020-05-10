@@ -213,6 +213,7 @@ pdf.(Normal(), 1.5) * 0.6
 
 ## 6.8 ガンマ分布のGLM
 https://juliastats.github.io/Distributions.jl/latest/univariate.html#Distributions.Gamma
+
 Distribution.jlのパラメトライズ $$ f(x; \alpha, \theta) = \frac{x^{\alpha-1} e^{-x/\theta}}{\Gamma(\alpha) \theta^\alpha}, \quad x &gt; 0 $$
 
 ```julia
