@@ -17,7 +17,7 @@ end
 
 for x in filter(x -> x != "build.jl", readdir("src"))
     Literate.markdown(joinpath(src, x), out_markdown; documenter=false)
-    if x in ["section10.jl"]
+    if x in ["section10.jl", "section11.jl"]
         Literate.notebook(joinpath(src, x), out; execute=false, documenter=true)
     else
         Literate.notebook(joinpath(src, x), out; preprocess=preprocess, execute=false, documenter=true)
